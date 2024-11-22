@@ -5,7 +5,7 @@ import HubSpot_Contacts from './classes/contacts';
 import HubSpot_Deals from './classes/deals';
 import HubSpot_Products from './classes/products';
 
-export class HubSpot {
+export default class HubSpot {
 
 	api: any;
 	contacts: any;

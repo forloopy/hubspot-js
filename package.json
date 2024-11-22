@@ -1,15 +1,31 @@
 {
   "name": "@forloopy/hubspot",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.2",
+  "description": "A Node.js library for interacting with the HubSpot API, with additional auto-tagging functionality.",
+  "homepage": "https://github.com/forloopy/hubspot-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forloopy/hubspot-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/forloopy/hubspot-js/issues"
+  },
+  "type": "module",
+  "files": ["dist"],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["hubspot", "nodejs", "api", "integration", "crm", "auto-tagging"],
+  "author": "@forloopy",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.7.4",
