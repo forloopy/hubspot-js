@@ -29,7 +29,9 @@ export default class HubSpot_Deals {
 				const toObjectId = id; 
 				const associationTypeId = this.#associationTypes['contact'];
 				const res = await this.api.put(`/objects/deals/${dealId}/associations/${toObjectType}/${toObjectId}/${associationTypeId}`); 
-				console.log( res )
+				// Debug
+				// console.log( res )
+				// Return
 				return await res.json();
             },
 		}

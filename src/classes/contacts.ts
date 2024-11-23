@@ -59,7 +59,8 @@ export default class HubSpot_Contacts {
 							const updateProperty = await this.api.patch(`/properties/contacts/${propertyName}`,{
 								options: propertyOptions
 							}); 
-							console.dir( await updateProperty.json(), { depth: null } );
+							// Debug
+							// console.dir( await updateProperty.json(), { depth: null } );
 						}
 						// Contact's Property
 						if (getContactData?.properties[propertyName]) {
@@ -111,12 +112,12 @@ export default class HubSpot_Contacts {
 			page?: string
 		}
 	): Promise <object> => {
-		const { buildQueryString } = await import('../utils/helpers');
+		const { buildQueryString } = await import('../utils/helpers.js');
 		const queryString = buildQueryString(params);
 		const res = await this.api.get(`/objects/contacts?${queryString}`);
-
-		console.dir(res, { depth: null })
-
+		// Debug
+		// console.dir(res, { depth: null })
+		// Return
 		return await res.json();
 	}
 

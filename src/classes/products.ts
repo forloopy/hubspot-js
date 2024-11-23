@@ -19,7 +19,9 @@ export default class HubSpot_Products {
 		
 	): Promise <object> => {
 		const res = await this.api.get(`/objects/products`); 
-		console.dir(res, { depth: null })
+		// Debug
+		// console.dir(res, { depth: null })
+		// Return
 		return await res.json();
 	}
 

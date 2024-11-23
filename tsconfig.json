@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "module": "esnext",
-    "rootDir": "src",
-    "declaration": true,
-    "outDir": "./dist",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
-  }
+    "outDir": "dist",               // Output directory for compiled files
+    "module": "Node16",             // Use ES module system (NodeJS also supports this)
+    "target": "es2017",             // Modern JavaScript target (ES2017 or higher)
+    "moduleResolution": "Node16",   // Resolve modules as Node.js does
+    "declaration": true,            // Generate .d.ts files for type declarations
+    "declarationMap": true,         // Generate source maps for declaration files
+    "sourceMap": true,              // Generate source maps for debugging
+    "strict": true,                 // Enable all strict type-checking options
+    "esModuleInterop": true,        // Allow interoperability between CommonJS and ES modules
+    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in file names
+    "resolveJsonModule": true,      // Allow importing JSON modules
+    "allowSyntheticDefaultImports": true, // Simplify default imports
+    "skipLibCheck": true            // Skip type checking for declaration files
+  },
+  "include": ["src/**/*"],          // Include all files in the src directory
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and dist folder
 }

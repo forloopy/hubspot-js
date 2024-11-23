@@ -1,9 +1,9 @@
 // Utils
-import HubSpot_APIClient from './utils/client';
+import HubSpot_APIClient from './utils/client.js';
 // Classes
-import HubSpot_Contacts from './classes/contacts';
-import HubSpot_Deals from './classes/deals';
-import HubSpot_Products from './classes/products';
+import HubSpot_Contacts from './classes/contacts.js';
+import HubSpot_Deals from './classes/deals.js';
+import HubSpot_Products from './classes/products.js';
 
 export default class HubSpot {
 
